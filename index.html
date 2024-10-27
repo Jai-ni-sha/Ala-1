@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyanmanjari University - Home Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #0066cc, #00ccff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgba(52, 80, 147, 0.7);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            position: relative;
+        }
+
+        header img {
+            width: 500px;
+            height: 80px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 11px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            color: #003366;
+            margin-bottom: 15px;
+        }
+
+        
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            background: linear-gradient(to right, #003366, #0059b3);
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .buttons button:hover {
+            background: linear-gradient(to right, #0059b3, #007acc);
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color:  rgba(52, 80, 147, 0.7);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+        }
+
+        footer h1 {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://gmiu.edu.in/gmiu/website_assets/images/gmiulogo.png" alt="GMIU Logo">
+        
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Subject Name</h2>
+                <p> Web Designing</p>
+            <h2>Subject Code</h2>
+                <p> BETCE13304</p>
+            <h2>Student Name</h2>
+                <p> Jainisha Makwana</p>
+            <h2>Enrollment No</h2>
+                <p>20230905090017</p>
+         </div>
+        <div class="buttons">
+            <button onclick="showAlert('ALA-1')"><a href="Task_1.html">task 1</a></button>
+            <button onclick="showAlert('ALA-2')"><a href="Task_2.html">task 2</a></button>
+            <button onclick="showAlert('ALA-3')"><a href="Task_3.html">task 3</a></button>
+        </div>
+    </div>
+
+    <footer>
+        <h1>Gyanmanjari Innovative University</h1>
+    </footer>
+
+    <script>
+        function showAlert(buttonName) {
+            alert(buttonName + ' button clicked!');
+        }
+    </script>
+</body>
+
+</html>
